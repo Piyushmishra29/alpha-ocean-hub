@@ -1,15 +1,16 @@
-export const GALLERY: { src: string; alt: string }[] = [
-  { src: "/photos/img-2931.jpg", alt: "Surfer riding a wave at Weligama" },
-  { src: "/photos/img-8611.jpg", alt: "Carving a clean wave face" },
-  { src: "/photos/img-2921.jpg", alt: "Walking the board on a small wave" },
-  { src: "/photos/group-lesson.jpg", alt: "Group surf lesson on the beach" },
-  { src: "/photos/img-7207.jpg", alt: "Sunset surf session" },
-  { src: "/photos/board-portrait.jpg", alt: "Students with their boards" },
-  { src: "/photos/img-8393.jpg", alt: "Dropping into a wave" },
-  { src: "/photos/img-2924.jpg", alt: "Cruising along the wave" },
+// Cinematic hero crossfade — 3 strongest wave-riding shots (portrait, dynamic).
+export const HERO_IMAGES = [
+  "/photos/img-7207.jpg",
+  "/photos/img-8393.jpg",
+  "/photos/img-8611.jpg",
 ];
 
-// public/frames/ contains frame_0001.jpg … frame_0114.jpg
-export const FRAME_COUNT = 114;
-export const framePath = (i: number) =>
-  `/frames/frame_${String(i).padStart(4, "0")}.jpg`;
+// Gallery grid — mix of action + lifestyle, varied aspect ratios.
+export const GALLERY: { src: string; alt: string; tall?: boolean }[] = [
+  { src: "/photos/img-8611.jpg", alt: "Carving a clean wave face", tall: true },
+  { src: "/photos/img-2931.jpg", alt: "Riding a wave at Weligama" },
+  { src: "/photos/group-lesson.jpg", alt: "Group surf lesson on the beach" },
+  { src: "/photos/img-8393.jpg", alt: "Dropping in with spray flying", tall: true },
+  { src: "/photos/img-2921.jpg", alt: "Walking the board on a small wave" },
+  { src: "/photos/903869d4-6dd6-4842-80f1-4a0dffde2d68.jpg", alt: "Paddling out at Weligama" },
+];

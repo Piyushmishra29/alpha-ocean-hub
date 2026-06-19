@@ -3,18 +3,21 @@ import { SITE } from "@/lib/site";
 
 export default function BookingCTA() {
   return (
-    <section className="relative overflow-hidden px-6 py-28 text-center">
+    <section className="relative overflow-hidden px-6 py-32 text-center sm:py-40">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/hero-poster.jpg" alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover" />
-      <div className="absolute inset-0 bg-navy/80" />
-      <div className="relative z-10 mx-auto max-w-2xl text-white">
-        <h2 className="font-display text-5xl sm:text-7xl">Ready to paddle out?</h2>
-        <p className="mx-auto mt-5 max-w-md text-white/85">
-          Message us on WhatsApp for prices &amp; availability — we&apos;ll get you on a
-          wave. Surf. Beach. Chill.
+      <img src="/photos/img-8611.jpg" alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover" />
+      <div className="absolute inset-0 bg-navy/75" />
+      <div className="relative z-10 mx-auto max-w-3xl text-white">
+        <p className="font-script text-3xl text-gold">Ready when you are</p>
+        <h2 className="mt-3 font-display text-6xl uppercase leading-[0.95] sm:text-8xl">
+          Let&apos;s get you<br />on a wave
+        </h2>
+        <p className="mx-auto mt-6 max-w-md text-white/80">
+          Message us on WhatsApp for prices &amp; availability — lessons, rentals, or just
+          a chat about the surf. Surf. Beach. Chill.
         </p>
-        <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <WhatsAppButton variant="primary" message="Hi Alpha Ocean Hub! I'd like to know about lessons, rentals, prices & availability. 🏄">
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <WhatsAppButton message="Hi Alpha Ocean Hub! I'd like to know about lessons, rentals, prices & availability. 🏄">
             Message us on WhatsApp
           </WhatsAppButton>
           <a

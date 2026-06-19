@@ -11,10 +11,12 @@ const config: Config = {
         gold: "#F5C242",
         green: "#3DBE8B",
         sand: "#F7F3EC",
+        cream: "#FBF8F2",
       },
       fontFamily: {
-        display: ["var(--font-display)", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "Impact", "sans-serif"],
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        script: ["var(--font-script)", "cursive"],
       },
     },
   },
