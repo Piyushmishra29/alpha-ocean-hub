@@ -15,12 +15,12 @@ html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 .lenis.lenis-stopped { overflow: hidden; }
 
-/* Hero Ken Burns */
+/* Hero Ken Burns — slow, looping so a single still stays alive */
 @keyframes kenburns {
-  from { transform: scale(1.02); }
-  to { transform: scale(1.14); }
+  from { transform: scale(1.03); }
+  to { transform: scale(1.16); }
 }
-.animate-kenburns { animation: kenburns 9s ease-out forwards; }
+.animate-kenburns { animation: kenburns 22s ease-in-out infinite alternate; }
 
 /* Marquee */
 @keyframes marquee {

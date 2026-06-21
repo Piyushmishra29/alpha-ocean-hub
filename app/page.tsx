@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import TideBar from "@/components/TideBar";
 import Marquee from "@/components/Marquee";
 import Intro from "@/components/Intro";
 import Lessons from "@/components/Lessons";
@@ -17,6 +18,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <TideBar />
         <Marquee />
         <Intro />
         <Lessons />

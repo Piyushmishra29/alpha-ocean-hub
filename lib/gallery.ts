@@ -1,9 +1,5 @@
-// Cinematic hero crossfade — 3 strongest wave-riding shots (portrait, dynamic).
-export const HERO_IMAGES = [
-  "/photos/img-7207.jpg",
-  "/photos/img-8393.jpg",
-  "/photos/img-8611.jpg",
-];
+// Single cinematic hero shot — the most dynamic carving-with-spray frame.
+export const HERO_IMAGE = "/photos/img-8393.jpg";
 
 // Gallery grid — mix of action + lifestyle, varied aspect ratios.
 export const GALLERY: { src: string; alt: string; tall?: boolean }[] = [

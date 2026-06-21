@@ -2,6 +2,8 @@ export const SITE = {
   name: "Alpha Ocean Hub",
   tagline: "Surf Beach. Chill.",
   location: "Weligama, Sri Lanka",
+  lat: 5.9724,
+  lng: 80.4292,
   instagram: "https://www.instagram.com/alphaoceanhub/",
   instagramHandle: "@alphaoceanhub",
   // Stub until owner supplies real number. Digits only, country code first, no '+'.
