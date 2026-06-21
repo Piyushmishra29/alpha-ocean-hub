@@ -18,7 +18,6 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <TideBar />
         <Marquee />
         <Intro />
         <Lessons />
@@ -35,6 +34,7 @@ export default function Home() {
         <BookingCTA />
       </main>
       <Footer />
+      <TideBar />
     </>
   );
 }
