@@ -5,12 +5,15 @@ import { asset } from "./asset";
 export const HERO_DESKTOP = asset("/photos/img-2931.jpg");
 export const HERO_MOBILE = asset("/photos/img-8611.jpg");
 
-// Gallery grid — mix of action + lifestyle, varied aspect ratios.
+// Gallery grid — mix of action + lifestyle (real WhatsApp shots), varied ratios.
 export const GALLERY: { src: string; alt: string; tall?: boolean }[] = [
-  { src: asset("/photos/img-8611.jpg"), alt: "Carving a clean wave face", tall: true },
-  { src: asset("/photos/img-2931.jpg"), alt: "Riding a wave at Weligama" },
-  { src: asset("/photos/group-lesson.jpg"), alt: "Group surf lesson on the beach" },
+  { src: asset("/photos/alpha-03.webp"), alt: "Boards held high on Weligama beach", tall: true },
+  { src: asset("/photos/alpha-06.webp"), alt: "Group lesson paddling out" },
+  { src: asset("/photos/alpha-10.webp"), alt: "Longboards against the sky" },
   { src: asset("/photos/img-8393.jpg"), alt: "Dropping in with spray flying", tall: true },
-  { src: asset("/photos/img-2921.jpg"), alt: "Walking the board on a small wave" },
-  { src: asset("/photos/903869d4-6dd6-4842-80f1-4a0dffde2d68.jpg"), alt: "Paddling out at Weligama" },
+  { src: asset("/photos/alpha-24.webp"), alt: "Longboard duo on the sand" },
+  { src: asset("/photos/alpha-14.webp"), alt: "Reflections on the wet sand" },
+  { src: asset("/photos/alpha-22.webp"), alt: "The beach crew", tall: true },
+  { src: asset("/photos/alpha-01.webp"), alt: "Sunset palms at Weligama" },
+  { src: asset("/photos/img-8611.jpg"), alt: "Carving a clean wave face" },
 ];

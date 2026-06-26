@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "(function(){var d=document,h=d.documentElement;h.classList.add('reveal-on');function arm(){var els=d.querySelectorAll('[data-reveal]');if(!('IntersectionObserver' in window)){for(var i=0;i<els.length;i++)els[i].setAttribute('data-shown','');return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.setAttribute('data-shown','');io.unobserve(e.target);}});},{rootMargin:'0px 0px -80px 0px'});els.forEach(function(el){io.observe(el);});}if(d.readyState!=='loading')arm();else d.addEventListener('DOMContentLoaded',arm);})();",
+              "(function(){var d=document,h=d.documentElement;h.classList.add('reveal-on');function passed(){var els=d.querySelectorAll('[data-reveal]:not([data-shown])');for(var i=0;i<els.length;i++){if(els[i].getBoundingClientRect().bottom<=0)els[i].setAttribute('data-shown','');}}function arm(){var els=d.querySelectorAll('[data-reveal]');if(!('IntersectionObserver' in window)){for(var i=0;i<els.length;i++)els[i].setAttribute('data-shown','');return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.setAttribute('data-shown','');io.unobserve(e.target);}});},{rootMargin:'0px 0px -80px 0px'});els.forEach(function(el){io.observe(el);});passed();window.addEventListener('scroll',passed,{passive:true});window.addEventListener('load',passed);}if(d.readyState!=='loading')arm();else d.addEventListener('DOMContentLoaded',arm);})();",
           }}
         />
       </head>
