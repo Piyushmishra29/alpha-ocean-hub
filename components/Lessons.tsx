@@ -1,6 +1,7 @@
 import Reveal from "./Reveal";
 import WhatsAppButton from "./WhatsAppButton";
 import Icon from "./Icon";
+import { asset } from "@/lib/asset";
 
 const POINTS = [
   { icon: "wave" as const, text: "Group & private lessons for all levels" },
@@ -43,8 +44,10 @@ export default function Lessons() {
         <div className="relative">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/photos/group-lesson.jpg"
+            src={asset("/photos/group-lesson.jpg")}
             alt="Group surf lesson on Weligama beach"
+            loading="lazy"
+            decoding="async"
             className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-2xl"
           />
           <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-navy px-6 py-5 text-white shadow-xl sm:block">

@@ -1,6 +1,7 @@
 import Reveal from "./Reveal";
 import WhatsAppButton from "./WhatsAppButton";
 import Icon from "./Icon";
+import { asset } from "@/lib/asset";
 
 const POINTS = [
   { icon: "board" as const, text: "Soft-tops & hard boards for every level" },
@@ -16,8 +17,10 @@ export default function Rentals() {
           <div className="relative">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/photos/903869d4-6dd6-4842-80f1-4a0dffde2d68.jpg"
+              src={asset("/photos/903869d4-6dd6-4842-80f1-4a0dffde2d68.jpg")}
               alt="Heading out with a board at Weligama"
+              loading="lazy"
+              decoding="async"
               className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-2xl"
             />
           </div>

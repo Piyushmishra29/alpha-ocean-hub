@@ -14,13 +14,26 @@ export default function Location() {
         <p className="mt-6 font-script text-3xl text-sun">{SITE.location}</p>
       </Reveal>
       <Reveal delay={0.1}>
-        <iframe
-          title="Weligama map"
-          src={SITE.mapEmbed}
-          className="aspect-[4/3] w-full rounded-[2rem] border-0 shadow-2xl"
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
+        <div className="overflow-hidden rounded-[2rem] shadow-2xl">
+          <iframe
+            title="Weligama map"
+            src={SITE.mapEmbed}
+            className="aspect-[4/3] w-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+        <a
+          href={SITE.mapLink}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-cyan hover:text-navy"
+        >
+          Open in Maps
+          <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M7 17 17 7M7 7h10v10" />
+          </svg>
+        </a>
       </Reveal>
     </section>
   );

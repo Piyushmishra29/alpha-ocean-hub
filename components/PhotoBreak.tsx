@@ -19,7 +19,7 @@ export default function PhotoBreak({
     <section ref={ref} className="relative h-[60vh] w-full overflow-hidden sm:h-[80vh]">
       <motion.div style={{ y }} className="absolute inset-0 h-[124%] -top-[12%]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={src} alt="" aria-hidden className="h-full w-full object-cover" />
+        <img src={src} alt="" aria-hidden loading="lazy" decoding="async" className="h-full w-full object-cover" />
       </motion.div>
       {quote && (
         <>

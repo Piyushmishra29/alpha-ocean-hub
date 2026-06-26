@@ -11,6 +11,7 @@ import Gallery from "@/components/Gallery";
 import Location from "@/components/Location";
 import BookingCTA from "@/components/BookingCTA";
 import Footer from "@/components/Footer";
+import { asset } from "@/lib/asset";
 
 export default function Home() {
   return (
@@ -22,14 +23,14 @@ export default function Home() {
         <Intro />
         <Lessons />
         <PhotoBreak
-          src="/photos/img-2931.jpg"
+          src={asset("/photos/img-2931.jpg")}
           quote="Not just surfing. It's a lifestyle."
           attribution="Weligama, Sri Lanka"
         />
         <Rentals />
         <WhyUs />
         <Gallery />
-        <PhotoBreak src="/photos/img-2924.jpg" />
+        <PhotoBreak src={asset("/photos/img-2924.jpg")} />
         <Location />
         <BookingCTA />
       </main>

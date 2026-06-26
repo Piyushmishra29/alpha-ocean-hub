@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 export default function Logo({
   variant = "white",
@@ -9,7 +10,7 @@ export default function Logo({
   className?: string;
   priority?: boolean;
 }) {
-  const src = variant === "white" ? "/logo-white.png" : "/logo-mark.png";
+  const src = asset(variant === "white" ? "/logo-white.png" : "/logo-mark.png");
   return (
     <Image
       src={src}

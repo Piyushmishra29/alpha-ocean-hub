@@ -1,6 +1,6 @@
-"use client";
-import { motion } from "framer-motion";
-
+// Plain server component — content is visible by default (no JS required).
+// A tiny inline observer in app/layout.tsx adds `.reveal-on` to <html> and
+// reveals these on scroll, so a slow/absent JS bundle never hides content.
 export default function Reveal({
   children,
   delay = 0,
@@ -11,14 +11,12 @@ export default function Reveal({
   className?: string;
 }) {
   return (
-    <motion.div
+    <div
+      data-reveal=""
       className={className}
-      initial={{ opacity: 0, y: 28 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay }}
+      style={{ "--reveal-delay": `${delay}s` } as React.CSSProperties}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

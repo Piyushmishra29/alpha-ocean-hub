@@ -6,9 +6,13 @@ export const SITE = {
   lng: 80.4292,
   instagram: "https://www.instagram.com/alphaoceanhub/",
   instagramHandle: "@alphaoceanhub",
-  // Stub until owner supplies real number. Digits only, country code first, no '+'.
-  whatsappNumber: "94000000000",
-  // Weligama bay Google Maps embed (place search).
+  // Digits only, country code first, no '+'. (+94 74 261 1910)
+  whatsappNumber: "94742611910",
+  // Google Maps embed — keyless pb form (the /maps/embed endpoint is
+  // iframe-allowed; the older output=embed URL redirects through an
+  // X-Frame-Options: SAMEORIGIN response that browsers block).
   mapEmbed:
-    "https://www.google.com/maps?q=Weligama%20Beach%20Sri%20Lanka&output=embed",
+    "https://www.google.com/maps/embed?pb=!1m3!2m1!1sWeligama+Beach,+Sri+Lanka!6i14",
+  // Deep link for the "open in maps" button.
+  mapLink: "https://www.google.com/maps/search/?api=1&query=Weligama+Beach+Sri+Lanka",
 } as const;
