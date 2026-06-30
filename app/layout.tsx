@@ -9,7 +9,7 @@ const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const script = Caveat({ weight: ["500", "700"], subsets: ["latin"], variable: "--font-script" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://alphaoceanhub.com"),
+  metadataBase: new URL("https://surfweligama.cloud"),
   title: "Alpha Ocean Hub — Best Surf School in Weligama | Surf Lessons & Board Rentals",
   description:
     "Best surf school in Weligama, Sri Lanka. Beginner-friendly surf lessons for all levels, board rentals, and friendly local instructors. Learn to surf in Weligama Bay's gentle waves. Book on WhatsApp.",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: "Beginner-friendly surf lessons & board rentals in Weligama, Sri Lanka.",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://alphaoceanhub.com" },
+  alternates: { canonical: "https://surfweligama.cloud" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -62,10 +62,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "LocalBusiness",
               name: "Alpha Ocean Hub",
               description: "Best surf school in Weligama, Sri Lanka. Beginner-friendly surf lessons and board rentals.",
-              url: "https://alphaoceanhub.com",
+              url: "https://surfweligama.cloud",
               telephone: "+94742611910",
-              email: "hello@alphaoceanhub.com",
-              image: "https://alphaoceanhub.com/og.jpg",
+              email: "hello@surfweligama.cloud",
+              image: "https://surfweligama.cloud/og.jpg",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Weligama",
@@ -74,8 +74,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: 5.9724,
-                longitude: 80.4292,
+                latitude: 5.97125,
+                longitude: 80.4266873,
               },
               openingHours: "Mo-Su 07:00-18:00",
               priceRange: "$",

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alphaoceanhub.com/sitemap.xml
+Sitemap: https://surfweligama.cloud/sitemap.xml
