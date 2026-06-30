@@ -32,7 +32,7 @@ export default function Rentals() {
           <span className="font-display text-7xl text-sun/30 sm:text-8xl">02</span>
           <p className="-mt-3 text-xs font-semibold uppercase tracking-[0.28em] text-sun">Board Rentals</p>
           <h2 className="mt-4 font-display text-5xl uppercase leading-[0.95] text-navy sm:text-6xl">
-            Grab a board,<br />hit the water
+            Surf board rental Weligama<br />— grab &amp; go
           </h2>
           <p className="mt-6 max-w-md text-navy/70">
             A full quiver ready at the beach. Paddle out whenever the waves are calling —

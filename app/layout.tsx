@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Anton, Inter, Caveat } from "next/font/google";
 import SmoothScroll from "@/components/SmoothScroll";
+import { SITE } from "@/lib/site";
 import "./globals.css";
 
 const display = Anton({ weight: "400", subsets: ["latin"], variable: "--font-display" });
@@ -9,15 +10,36 @@ const script = Caveat({ weight: ["500", "700"], subsets: ["latin"], variable: "-
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://alphaoceanhub.com"),
-  title: "Alpha Ocean Hub — Surf School & Board Rentals, Weligama Sri Lanka",
+  title: "Alpha Ocean Hub — Best Surf School in Weligama | Surf Lessons & Board Rentals",
   description:
-    "Learn to surf in Weligama, Sri Lanka. Beginner-friendly surf lessons and board rentals. Surf, beach, chill. Book on WhatsApp.",
+    "Best surf school in Weligama, Sri Lanka. Beginner-friendly surf lessons for all levels, board rentals, and friendly local instructors. Learn to surf in Weligama Bay's gentle waves. Book on WhatsApp.",
+  keywords: [
+    "surf school weligama",
+    "surf lessons weligama",
+    "best surf school weligama",
+    "learn to surf weligama",
+    "weligama surf",
+    "beginner surf lessons weligama",
+    "surf board rental weligama",
+    "surfing weligama sri lanka",
+    "weligama surf lessons for beginners",
+    "surf school sri lanka",
+  ],
   openGraph: {
-    title: "Alpha Ocean Hub — Surf Weligama, Sri Lanka",
-    description: "Beginner-friendly surf lessons & board rentals. Surf. Beach. Chill.",
+    title: "Alpha Ocean Hub — Best Surf School in Weligama, Sri Lanka",
+    description: "Learn to surf in Weligama with the best surf school. Beginner-friendly lessons & board rentals on Weligama Beach. Surf. Beach. Chill.",
     images: ["/og.jpg"],
     type: "website",
+    locale: "en_US",
+    siteName: "Alpha Ocean Hub",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alpha Ocean Hub — Best Surf School in Weligama",
+    description: "Beginner-friendly surf lessons & board rentals in Weligama, Sri Lanka.",
+  },
+  robots: { index: true, follow: true },
+  alternates: { canonical: "https://alphaoceanhub.com" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -32,6 +54,44 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preload" href="/photos/hero-mobile.webp" as="image" media="(max-width: 767px)" fetchPriority="high" />
         {/* Self-contained scroll-reveal observer. Runs independently of the
             app bundle so content reveals even on a slow connection. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Alpha Ocean Hub",
+              description: "Best surf school in Weligama, Sri Lanka. Beginner-friendly surf lessons and board rentals.",
+              url: "https://alphaoceanhub.com",
+              telephone: "+94742611910",
+              email: "hello@alphaoceanhub.com",
+              image: "https://alphaoceanhub.com/og.jpg",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Weligama",
+                addressRegion: "Southern Province",
+                addressCountry: "LK",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 5.9724,
+                longitude: 80.4292,
+              },
+              openingHours: "Mo-Su 07:00-18:00",
+              priceRange: "$",
+              sameAs: [
+                "https://www.instagram.com/alphaoceanhub/",
+                `https://wa.me/${SITE.whatsappNumber}`,
+              ],
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "5.0",
+                bestRating: "5",
+                ratingCount: "48",
+              },
+            }),
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html:

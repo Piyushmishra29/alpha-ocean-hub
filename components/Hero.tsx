@@ -41,14 +41,14 @@ export default function Hero() {
           className="hero-in font-display text-[18vw] uppercase text-white sm:text-[13vw] lg:text-[10.5rem]"
           style={{ animationDelay: "0.28s" }}
         >
-          Ride Your<br />First Wave
+          Best Surf School<br />in Weligama
         </h1>
         <div
           className="hero-in mt-6 flex flex-col items-start gap-6 sm:flex-row sm:items-center"
           style={{ animationDelay: "0.5s" }}
         >
           <p className="max-w-sm text-base text-white/85">
-            Beginner-friendly surf lessons &amp; board rentals on the south coast of Sri Lanka.
+            Learn to surf in Weligama with beginner-friendly surf lessons &amp; board rentals on the south coast of Sri Lanka. Book your surf lesson today.
           </p>
           <WhatsAppButton message="Hi Alpha Ocean Hub! I'd like to book a surf session. 🏄">
             Book on WhatsApp

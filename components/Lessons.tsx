@@ -17,7 +17,7 @@ export default function Lessons() {
         <span className="font-display text-7xl text-sun/30 sm:text-8xl">01</span>
         <p className="-mt-3 text-xs font-semibold uppercase tracking-[0.28em] text-cyan">Surf Lessons</p>
         <h2 className="mt-4 font-display text-5xl uppercase leading-[0.95] text-navy sm:text-6xl">
-          Learn from<br />local legends
+          Surf lessons Weligama<br />for every level
         </h2>
         <p className="mt-6 max-w-md text-navy/70">
           Stand up on your very first session. Small groups and private coaching with
