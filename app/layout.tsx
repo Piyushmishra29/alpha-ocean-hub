@@ -24,6 +24,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${display.variable} ${sans.variable} ${script.variable}`}>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://marine-api.open-meteo.com" />
+        <link rel="dns-prefetch" href="https://www.google.com" />
+        <link rel="preload" href="/photos/hero-desktop.webp" as="image" media="(min-width: 768px)" fetchPriority="high" />
+        <link rel="preload" href="/photos/hero-mobile.webp" as="image" media="(max-width: 767px)" fetchPriority="high" />
         {/* Self-contained scroll-reveal observer. Runs independently of the
             app bundle so content reveals even on a slow connection. */}
         <script

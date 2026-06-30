@@ -6,7 +6,7 @@ export default function BookingCTA() {
   return (
     <section className="relative overflow-hidden px-6 py-32 text-center sm:py-40">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={asset("/photos/img-8611.jpg")} alt="" aria-hidden loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
+      <img src={asset("/photos/img-8611.jpg")} alt="" aria-hidden loading="lazy" decoding="async" width={1600} height={2845} className="absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0 bg-navy/75" />
       <div className="relative z-10 mx-auto max-w-3xl text-white">
         <p className="font-script text-3xl text-gold">Ready when you are</p>

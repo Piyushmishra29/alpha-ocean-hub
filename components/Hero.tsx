@@ -17,6 +17,8 @@ export default function Hero() {
             alt="Surfing in Weligama, Sri Lanka"
             fetchPriority="high"
             decoding="async"
+            width={941}
+            height={1672}
             className="h-full w-full animate-kenburns object-cover"
           />
         </picture>

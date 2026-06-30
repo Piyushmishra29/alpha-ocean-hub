@@ -23,7 +23,7 @@ export default function Home() {
         <Intro />
         <Lessons />
         <PhotoBreak
-          src={asset("/photos/img-2931.jpg")}
+          src={asset("/photos/hero-desktop.webp")}
           quote="Not just surfing. It's a lifestyle."
           attribution="Weligama, Sri Lanka"
         />

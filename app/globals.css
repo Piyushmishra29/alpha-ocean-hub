@@ -63,3 +63,20 @@ html.lenis, html.lenis body { height: auto; }
 @media (prefers-reduced-motion: reduce) {
   .reveal-on [data-reveal] { opacity: 1; transform: none; transition: none; }
 }
+
+/* Pure CSS parallax — no JS dependency */
+.parallax-scroll {
+  will-change: transform;
+  transform: translateY(0);
+}
+@supports (animation-timeline: scroll()) {
+  .parallax-scroll {
+    animation: parallax linear;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
+  }
+}
+@keyframes parallax {
+  from { transform: translateY(-12%); }
+  to { transform: translateY(12%); }
+}

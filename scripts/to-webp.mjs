@@ -19,8 +19,8 @@ for (const file of files) {
   const out = path.join(OUT, `${base}.webp`);
   await sharp(file)
     .rotate()
-    .resize({ width: 2400, withoutEnlargement: true }) // high-res
-    .webp({ quality: 86, effort: 5 })
+    .resize({ width: 1200, withoutEnlargement: true })
+    .webp({ quality: 80, effort: 6 })
     .toFile(out);
   const meta = await sharp(out).metadata();
   console.log(`✓ ${out}  (${meta.width}x${meta.height})`);

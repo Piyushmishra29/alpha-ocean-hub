@@ -21,6 +21,8 @@ export default function Rentals() {
               alt="Heading out with a board at Weligama"
               loading="lazy"
               decoding="async"
+              width={828}
+              height={1472}
               className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-2xl"
             />
           </div>

@@ -1,7 +1,3 @@
-"use client";
-import { useRef } from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
-
 export default function PhotoBreak({
   src,
   quote,
@@ -11,16 +7,12 @@ export default function PhotoBreak({
   quote?: string;
   attribution?: string;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], ["-12%", "12%"]);
-
   return (
-    <section ref={ref} className="relative h-[60vh] w-full overflow-hidden sm:h-[80vh]">
-      <motion.div style={{ y }} className="absolute inset-0 h-[124%] -top-[12%]">
+    <section className="relative h-[60vh] w-full overflow-hidden sm:h-[80vh]">
+      <div className="absolute inset-0 h-[124%] -top-[12%] parallax-scroll">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={src} alt="" aria-hidden loading="lazy" decoding="async" className="h-full w-full object-cover" />
-      </motion.div>
+        <img src={src} alt="" aria-hidden loading="lazy" decoding="async" width={1600} height={2300} className="h-full w-full object-cover" />
+      </div>
       {quote && (
         <>
           <div className="absolute inset-0 bg-navy/40" />

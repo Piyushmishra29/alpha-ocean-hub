@@ -8,5 +8,6 @@ const nextConfig = {
   images: { unoptimized: true },
   trailingSlash: true,
   basePath: basePath || undefined,
+  compiler: { removeConsole: process.env.NODE_ENV === 'production' },
 };
 export default nextConfig;

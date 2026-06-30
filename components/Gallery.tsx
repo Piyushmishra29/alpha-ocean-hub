@@ -21,6 +21,8 @@ export default function Gallery() {
                 alt={g.alt}
                 loading="lazy"
                 decoding="async"
+                width={800}
+                height={1067}
                 className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />

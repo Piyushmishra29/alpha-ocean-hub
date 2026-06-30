@@ -48,6 +48,8 @@ export default function Lessons() {
             alt="Group surf lesson on Weligama beach"
             loading="lazy"
             decoding="async"
+            width={1534}
+            height={1280}
             className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-2xl"
           />
           <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-navy px-6 py-5 text-white shadow-xl sm:block">

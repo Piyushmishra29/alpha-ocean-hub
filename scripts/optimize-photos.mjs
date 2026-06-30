@@ -13,7 +13,7 @@ for (const file of files) {
   await sharp(path.join(SRC, file))
     .rotate()
     .resize({ width: 1600, withoutEnlargement: true })
-    .jpeg({ quality: 82, mozjpeg: true })
+    .jpeg({ quality: 78, mozjpeg: true })
     .toFile(path.join(OUT, `${base}.jpg`));
   console.log("optimized", base);
 }
